@@ -35,24 +35,45 @@ class Form extends Component {
 
     return (
       <form onSubmit={ this.handleSubmit }>
-        <input
-          name="name"
-          type="text"
-          value={ name }
-          onChange={ this.handleChange }
-        />
-        <input
-          name="age"
-          type="number"
-          value={ age }
-          onChange={ this.handleChange }
-        />
-        <input
-          name="email"
-          type="email"
-          value={ email }
-          onChange={ this.handleChange }
-        />
+        <div>
+          <label htmlFor="name">
+            Name:
+            <br />
+            <input
+              name="name"
+              type="text"
+              value={ name }
+              onChange={ this.handleChange }
+            />
+          </label>
+        </div>
+
+        <div>
+          <label htmlFor="age">
+            Age:
+            <br />
+            <input
+              name="age"
+              type="number"
+              value={ age }
+              onChange={ this.handleChange }
+            />
+          </label>
+        </div>
+
+        <div>
+          <label htmlFor="email">
+            E-mail:
+            <br />
+            <input
+              name="email"
+              type="email"
+              value={ email }
+              onChange={ this.handleChange }
+            />
+          </label>
+        </div>
+        <br />
         <button type="submit">
           Submit
         </button>
